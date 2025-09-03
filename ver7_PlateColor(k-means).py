@@ -48,7 +48,7 @@ def classify_plate_color(cropped_plate, k=2):
         return "unknown"
 
 
-cap = cv2.VideoCapture("sample5.mp4")  
+cap = cv2.VideoCapture(0)  
 
 while True:
     ret, frame = cap.read()
@@ -81,4 +81,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
